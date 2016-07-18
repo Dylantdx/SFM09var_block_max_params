@@ -25,8 +25,6 @@ Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, 
 
 ![Picture1](Parameters_in_Block_Maxima_Model.png)
 
-
-```
 # R code
 ```r
 # Close all plots and clear variables
