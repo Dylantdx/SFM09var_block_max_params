@@ -1,7 +1,7 @@
 # SFM09var_block_max_params
-[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **SMF07HaltonSeq** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
+## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **SFSvar_block_max_params** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
 ```yaml
 
@@ -17,7 +17,7 @@ Author : Chen Yingping ,Deng Ziwen ,Zhang Huijie ,Zhang Yifan.
 
 Submitted : Mon, July 18 2016 by Chen Yingping
 
-Datafiles: alpha_bMax_Portf.txt, beta_bMax_Portf.txt, kappa_bMax_Portf.txt
+Datafiles: BAY_close.txt, BMW_close.txt, SIE_close.txt, alpha_bMax_Portf.txt, beta_bMax_Portf.txt, kappa_bMax_Portf.txt
 
 Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, Siemens.Time period: from 2000-01-18 to 2016-06-28.'
 
@@ -31,7 +31,7 @@ Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, 
 # MATLAB code
 ```matlab
 # Estimate shape, scale and location parameters
-function MSRvar_block_max
+
 clc;
 close all;
 a=load('BAY_close.txt','-ascii');
