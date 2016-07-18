@@ -32,7 +32,7 @@ Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, 
 ```R
 # Estimate shape, scale and location parameters
 
-function MSRvar_block_max
+# function MSRvar_block_max
 clc;
 close all;
 a=load('BAY_close.txt','-ascii');
