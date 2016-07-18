@@ -24,15 +24,17 @@ Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, 
 ```
 
 ![Picture1](Parameters_in_Block_Maxima_Model.png)
-```
+
 # MATLAB code
 ```matlab
+# Estimate of shape, scale and location parameters
 function MSRvar_block_max
 clc;
 close all;
 a=load('BAY_close.txt','-ascii');
 b=load('BMW_close.txt','-ascii');
 c=load('SIE_close.txt','-ascii');
+#Portfolio
 d=a+b+c;
 x=d(2:end)-d(1:end-1);
 x=-x;
@@ -72,7 +74,7 @@ beta=parmhat(3);
 pext=p^n;
 var=beta+alpha/kappa*((-log(1-pext))^(-kappa)-1);
 ```
-# MATLAB code
+# MATLAB code 
 ```matlab
 function MSRvar_block_max_params
 clc;
@@ -80,7 +82,7 @@ close all;
 k=load('kappa_bMax_Portf.txt','-ascii');
 a=load('alpha_bMax_Portf.txt','-ascii');
 b=load('beta_bMax_Portf.txt','-ascii');
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^PLOTS
+# Plots of shape, scale and location parameters
 plot(k)
 grid on
 hold on
