@@ -71,7 +71,9 @@ alpha=parmhat(2);
 beta=parmhat(3);
 pext=p^n;
 var=beta+alpha/kappa*((-log(1-pext))^(-kappa)-1);
-
+```
+# MATLAB code
+```matlab
 function MSRvar_block_max_params
 clc;
 close all;
