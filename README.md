@@ -29,7 +29,7 @@ Example: 'Parameters estimated in Block Maxima Model for portfolio: Bayer, BMW, 
 ```
 
 # MATLAB code
-```matlab
+```R
 # Estimate shape, scale and location parameters
 
 function MSRvar_block_max
