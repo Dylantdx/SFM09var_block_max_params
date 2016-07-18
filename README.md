@@ -55,26 +55,7 @@ beta=parmhat(3);
 pext=p^n;
 var=beta+alpha/kappa*((-log(1-pext))^(-kappa)-1);
 
-# Plots of shape, scale and location parameters
-function MSRvar_block_max_params
-clc;
-close all;
-k=load('kappa_bMax_Portf.txt','-ascii');
-a=load('alpha_bMax_Portf.txt','-ascii');
-b=load('beta_bMax_Portf.txt','-ascii');
 
-plot(k)
-grid on
-hold on
-plot(a,'Color','red')
-plot(b,'Color','m');
-hold off
-legend('Shape Parameter','Scale Parameter','Location Parameter')
-title('Parameters in Block Maxima Model')
-xlim([-3 3963])
-set(gca,'XTick',[249 771 1294 1814 2337 2855 3366 3871]-250)
-set(gca,'XTickLabel',{'Jan 2001' 'Jan 2003' 'Jan 2005' ...
-   'Jan 2007' 'Jan 2009' 'Jan 2011' 'Jan 2013' 'Jan 2015'})
 
 ```
 # R code
