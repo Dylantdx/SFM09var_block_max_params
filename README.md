@@ -76,13 +76,13 @@ var=beta+alpha/kappa*((-log(1-pext))^(-kappa)-1);
 ```
 # MATLAB code 
 ```matlab
+# Plots of shape, scale and location parameters
 function MSRvar_block_max_params
 clc;
 close all;
 k=load('kappa_bMax_Portf.txt','-ascii');
 a=load('alpha_bMax_Portf.txt','-ascii');
 b=load('beta_bMax_Portf.txt','-ascii');
-# Plots of shape, scale and location parameters
 plot(k)
 grid on
 hold on
